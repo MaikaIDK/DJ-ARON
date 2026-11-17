@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Makes the page fit phone screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DJ Aron | Open-Format DJ for Parties, Weddings &amp; Events</title>
+
+  <!-- Google Fonts (needs internet). Orbitron = headings, Inter = body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Connects the CSS file (the look) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <div class="wrap">
+      <a class="mark" href="#top">DJ ARON</a>
+      <div class="links">
+        <a href="gallery.html">Gallery</a>
+        <a href="past-gigs.html">Past gigs</a>
+        <a href="samples.html">Samples</a>
+        <!-- href="#book" jumps to the element with id="book" -->
+        <a class="btn" href="#book">Book now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO (the first thing visitors see) ===== -->
+  <header class="hero" id="top">
+    <div class="wrap">
+      <!-- To use a real photo: delete this div and write
+           <img class="photo" src="aron.jpg" alt="DJ Aron">
+           (put aron.jpg in the same folder as this file) -->
+      <div class="photo" role="img" aria-label="Photo of DJ Aron">Replace with your press kit photo</div>
+
+      <h1 class="logo" aria-label="DJ Aron">
+        <span class="dj chrome">DJ</span><br>
+        <span class="name chrome">ARON</span>
+      </h1>
+
+      <p class="tag">Open-format DJ for clubs, weddings, and private events.</p>
+
+      <div class="row">
+        <a class="btn" href="#book">Check my date</a>
+        <a class="btn ghost" href="#sets">Hear a set</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <h2>About</h2>
+        <p>DJ Aron mixes EDM, R&amp;B, hip-hop, pop, and tribal/fest music to keep a room moving from the first song to the last.</p>
+        <p>Drawing on global sounds and underground vibes, he builds sets around your crowd, whether that is a packed club, a pool party, or a family celebration.</p>
+      </div>
+      <ul class="facts">
+        <li><b>Reads the room</b><span>Open format means the set follows your guests.</span></li>
+        <li><b>Any venue</b><span>Clubs, resorts, beaches, schools, and private homes.</span></li>
+        <li><b>Easy to book</b><span>Message him and get a reply with availability.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== GENRES ===== -->
+  <section id="genres">
+    <div class="wrap">
+      <h2>Genres</h2>
+      <ul class="chips">
+        <li>EDM</li>
+        <li>R&amp;B</li>
+        <li>Hip-Hop</li>
+        <li>Pop</li>
+        <li>Tribal / Fest</li>
+        <li>Reggaeton</li>
+        <li>Moombahton</li>
+        <li>Nu-Disco / 80s</li>
+        <li>Open Format</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== EVENTS (copy one card to add a new event type) ===== -->
+  <section id="events">
+    <div class="wrap">
+      <h2>Events</h2>
+      <div class="grid">
+        <div class="card"><div class="ic">🍸</div><h3>Clubs</h3><p>High-energy sets built for the dance floor.</p></div>
+        <div class="card"><div class="ic">🏖️</div><h3>Beach parties</h3><p>Tribal, fest, and feel-good sounds by the water.</p></div>
+        <div class="card"><div class="ic">🏊</div><h3>Pool parties</h3><p>Daytime grooves that build as the party grows.</p></div>
+        <div class="card"><div class="ic">🫧</div><h3>Foam parties</h3><p>Loud, wet, and non-stop.</p></div>
+        <div class="card"><div class="ic">🎂</div><h3>Birthdays</h3><p>Music for the guest of honor and every generation.</p></div>
+        <div class="card"><div class="ic">💍</div><h3>Weddings</h3><p>Smooth R&amp;B and pop, then a full dance finale.</p></div>
+        <div class="card"><div class="ic">🎓</div><h3>School events</h3><p>Clean, crowd-friendly mixes for young audiences.</p></div>
+        <div class="card"><div class="ic">🌴</div><h3>Resort events</h3><p>Sets for guests from many places and tastes.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LISTEN & WATCH (placeholders: replace with real clips) ===== -->
+  <section id="sets">
+    <div class="wrap">
+      <h2>Listen &amp; watch</h2>
+      <div class="sets">
+        <div class="clip">Add a live set video here<br>(YouTube or Facebook embed)</div>
+        <div class="clip">Add a SoundCloud or Mixcloud mix here</div>
+        <div class="clip">Add photos from past gigs here</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BOOKING FORM ===== -->
+  <section id="book">
+    <div class="wrap">
+      <h2>Book DJ Aron</h2>
+
+      <!-- id="bookingForm" lets script.js find this form -->
+      <form id="bookingForm">
+        <div class="two">
+          <label>Your name
+            <input name="name" required autocomplete="name">
+          </label>
+          <label>Phone or email
+            <input name="contact" required>
+          </label>
+        </div>
+
+        <div class="two">
+          <label>Event type
+            <select name="type" required>
+              <option value="">Choose one</option>
+              <option>Club night</option>
+              <option>Beach party</option>
+              <option>Pool party</option>
+              <option>Foam party</option>
+              <option>Birthday</option>
+              <option>Wedding</option>
+              <option>School event</option>
+              <option>Resort event</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>Event date
+            <input type="date" name="date" required>
+          </label>
+        </div>
+
+        <label>Venue or location
+          <input name="place" required>
+        </label>
+        <label>Anything else?
+          <textarea name="msg" placeholder="Number of guests, start time, music you love"></textarea>
+        </label>
+
+        <button class="btn" type="submit">Send booking request</button>
+        <div class="status" id="status" role="status"></div>
+      </form>
+
+      <div class="contact">
+        <a class="btn ghost" href="tel:09705499591">Call 0970 549 9591</a>
+        <a class="btn ghost" href="mailto:aronresuma@gmail.com">aronresuma@gmail.com</a>
+        <a class="btn ghost" href="https://www.instagram.com/w4rxn._" target="_blank" rel="noopener">Instagram @w4rxn._</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="wrap">
+      <span>© 2026 DJ Aron. All rights reserved.</span>
+      <span>
+        <a href="tel:09705499591">0970 549 9591</a>
+        <a href="mailto:aronresuma@gmail.com">Email</a>
+        <a href="https://www.instagram.com/w4rxn._" target="_blank" rel="noopener">Instagram</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- Sticky Call / Book bar (only shown on phones, see style.css) -->
+  <div class="stick">
+    <a class="btn ghost" href="tel:09705499591">Call</a>
+    <a class="btn" href="#book">Book now</a>
+  </div>
+
+  <!-- Connects the JavaScript file (the behavior). Placed last so the page loads first -->
+  <script src="script.js"></script>
+</body>
+</html>
