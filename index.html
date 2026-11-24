@@ -2,20 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- Makes the page fit phone screens -->
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DJ Aron | Open-Format DJ for Parties, Weddings &amp; Events</title>
-
-  <!-- Google Fonts (needs internet). Orbitron = headings, Inter = body text -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <!-- Connects the CSS file (the look) -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- ===== NAVBAR ===== -->
   <nav>
     <div class="wrap">
       <a class="mark" href="#top">DJ ARON</a>
@@ -23,24 +17,18 @@
         <a href="gallery.html">Gallery</a>
         <a href="past-gigs.html">Past gigs</a>
         <a href="samples.html">Samples</a>
-        <!-- href="#book" jumps to the element with id="book" -->
+
         <a class="btn" href="#book">Book now</a>
       </div>
     </div>
   </nav>
 
-  <!-- ===== HERO (the first thing visitors see) ===== -->
   <header class="hero" id="top">
     <div class="wrap">
-      <!-- To use a real photo: delete this div and write
-           <img class="photo" src="aron.jpg" alt="DJ Aron">
-           (put aron.jpg in the same folder as this file) -->
-      <div class="photo" role="img" aria-label="Photo of DJ Aron">Replace with your press kit photo</div>
-
-      <h1 class="logo" aria-label="DJ Aron">
-        <span class="dj chrome">DJ</span><br>
-        <span class="name chrome">ARON</span>
-      </h1>
+      <div class="stage">
+        <img class="cutout" src="images/aron-cutout.png" alt="DJ Aron">
+        <h1 class="sr-only">DJ Aron</h1>
+      </div>
 
       <p class="tag">Open-format DJ for clubs, weddings, and private events.</p>
 
@@ -51,7 +39,6 @@
     </div>
   </header>
 
-  <!-- ===== ABOUT ===== -->
   <section id="about">
     <div class="wrap about">
       <div>
@@ -67,7 +54,6 @@
     </div>
   </section>
 
-  <!-- ===== GENRES ===== -->
   <section id="genres">
     <div class="wrap">
       <h2>Genres</h2>
@@ -85,7 +71,6 @@
     </div>
   </section>
 
-  <!-- ===== EVENTS (copy one card to add a new event type) ===== -->
   <section id="events">
     <div class="wrap">
       <h2>Events</h2>
@@ -102,7 +87,6 @@
     </div>
   </section>
 
-  <!-- ===== LISTEN & WATCH (placeholders: replace with real clips) ===== -->
   <section id="sets">
     <div class="wrap">
       <h2>Listen &amp; watch</h2>
@@ -114,12 +98,10 @@
     </div>
   </section>
 
-  <!-- ===== BOOKING FORM ===== -->
   <section id="book">
     <div class="wrap">
       <h2>Book DJ Aron</h2>
 
-      <!-- id="bookingForm" lets script.js find this form -->
       <form id="bookingForm">
         <div class="two">
           <label>Your name
@@ -169,7 +151,6 @@
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer>
     <div class="wrap">
       <span>© 2026 DJ Aron. All rights reserved.</span>
@@ -181,13 +162,11 @@
     </div>
   </footer>
 
-  <!-- Sticky Call / Book bar (only shown on phones, see style.css) -->
   <div class="stick">
     <a class="btn ghost" href="tel:09705499591">Call</a>
     <a class="btn" href="#book">Book now</a>
   </div>
 
-  <!-- Connects the JavaScript file (the behavior). Placed last so the page loads first -->
   <script src="script.js"></script>
 </body>
 </html>
