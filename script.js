@@ -5,6 +5,7 @@ form.addEventListener('submit', function (event) {
   event.preventDefault();
 
   const data = new FormData(form);
+  const to = 'aronresuma@gmail.com';
 
   const body =
     'Name: ' + data.get('name') + '\n' +
@@ -16,11 +17,24 @@ form.addEventListener('submit', function (event) {
 
   const subject = 'Booking request: ' + data.get('type') + ' on ' + data.get('date');
 
-  const link =
-    'mailto:aronresuma@gmail.com' +
+  const mailto =
+    'mailto:' + to +
     '?subject=' + encodeURIComponent(subject) +
     '&body=' + encodeURIComponent(body);
 
-  statusBox.textContent = 'Opening your email app with the request filled in.';
-  window.location.href = link;
+  const gmail =
+    'https://mail.google.com/mail/?view=cm&fs=1&to=' + to +
+    '&su=' + encodeURIComponent(subject) +
+    '&body=' + encodeURIComponent(body);
+
+  statusBox.textContent = 'Opening your email app. ';
+
+  const link = document.createElement('a');
+  link.href = gmail;
+  link.target = '_blank';
+  link.rel = 'noopener';
+  link.textContent = 'Nothing opened? Send it with Gmail instead.';
+  statusBox.appendChild(link);
+
+  window.location.href = mailto;
 });
